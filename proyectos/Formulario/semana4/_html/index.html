@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../_css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario Avanzdo</h1>
+
+        <!--Barra de progreso-->
+        <div class="progreso-formulario">
+            <div class="barra-progreso" id="barraProgreso"></div>
+        </div>
+        <p style="text-align: center; color: #666;margin-bottom: 30px">
+            progreso: <span id="porcentajeProgreso">0%</span>
+        </p>
+
+        <!--form-->
+        <form id="formularioAvanzado"
+          novalidate>
+          <!--nombre con validacion en tiempo real-->
+            <div class="form-group">
+                <label for="nombre">Nombres Completos: *</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    autofocus
+                    pattern="[A-Za-z\s-ÁÉÍÓÚáéíóúÜü ]{3,40}"/>
+               
+                <div
+                    class="mensaje-error"
+                    id="errorNombre"></div>
+                <div
+                    class="mensaje-error"
+                    id="errorNombre"></div>
+                <div
+                    class="mensaje-exito"
+                    id="exitoNombre"></div>
+            </div>
+       
+            <!--Apellidos-->
+
+            <div class="form-group">
+                <label for="nombre">Apellidos Completos: *</label>
+                <input
+                    type="text"
+                    id="apellidos"
+                    name="apellidos"
+                    required
+                    autofocus
+                    pattern="[A-Za-z\s-ÁÉÍÓÚáéíóúÜü ]{3,40}"/>
+               
+                <div
+                    class="mensaje-error"
+                    id="errorApellidos"></div>
+                <div
+                    class="mensaje-error"
+                    id="errorApellidos"></div>
+                <div
+                    class="mensaje-exito"
+                    id="exitoApellidos"></div>
+            </div>
+
+            <!--email con validacion en tiempo real-->
+            <div class="form-group">
+                <label for="correo">Correo electronico: *</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    required
+                    placeholder="usuario@dominio.com"
+                    pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{5,50}$"/>
+                <div
+                    class="mensaje-error"
+                    id="errorCorreo"></div>
+                <div
+                    class="mensaje-exito"
+                    id="exitoCorreo"></div>
+            </div>
+
+            <!--verificacion de email-->
+                        <!--confirmacion de contraseña-->
+            <div class="form-group">
+                <label for="confirmarEmail">Confirmar correo *</label>
+                <input
+                    type="email"
+                    id="confirmarEmail"
+                    name="confirmarEmail"
+                    required
+                    placeholder="Repite tu Correo" />
+                <div
+                    class="mensaje-error"
+                    id="errorConfirmar"></div>
+                <div
+                    class="mensaje-exito"
+                    id="exitoConfirmar"></div>
+            </div>
+
+            <!--Contraseña con indicador de fortaleza-->
+            <div class="form-group">
+                <label for="password">Contaseña: *</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    placeholder="Minimo 8 caracteres"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,40}">
+                <div
+                    class="password-strength"
+                    id="strengthBar"></div>
+                <div
+                    class="mensaje-error"
+                    id="errorPassword"></div>
+                <div
+                    class="mensaje-exito"
+                    id="exitoPassword"></div>
+
+            </div>
+
+
+            <!--confirmacion de contraseña-->
+            <div class="form-group">
+                <label for="confirmarPassword">Confirmar contraseña *</label>
+                <input
+                    type="password"
+                    id="confirmarPassword"
+                    name="confirmarPassword"
+                    required
+                    placeholder="Repite tu contraseña" />
+                <div
+                    class="mensaje-error"
+                    id="errorConfirmar"></div>
+                <div
+                    class="mensaje-exito"
+                    id="exitoConfirmar"></div>
+            </div>
+
+            <!--Telefono con formato-->
+            <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    required
+                    placeholder="1234567890"
+                    pattern="[0-9]{10}" />
+                <div
+                    class="mensaje-error"
+                    id="errorTelefono"></div>
+                <div
+                    class="mensaje-exito"
+                    id="exitoTelefono"></div>
+            </div>
+
+            <!-- Fecha de nacimiento-->
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de nacimiento *</label>
+                <input
+                    type="date"
+                    id="fechaNacimiento"
+                    name="fechaNacimiento"
+                    required />
+                <div
+                    class="mensaje-error"
+                    id="errorFecha"></div>
+                <div
+                    class="mensaje-exito"
+                    id="exitoFecha"></div>
+            </div>
+
+            <!--comentarios con contador-->
+            <div class="form-group">
+                <label for="comentarios">Comentarios</label>
+                <textarea
+                    id="comentarios"
+                    name="comentarios"
+                    rows="4"
+                    maxlength="500"
+                    placeholder="Cuéntanos sobre ti (máximo 500 caracteres)"></textarea>
+                <div class="contador-caracteres">
+                    <span id="contadorComentarios">0</span>/500 caracteres
+                </div>
+            </div>
+
+            <!---terminos y condiciones-->
+            <div class="form-group">
+                <input
+                    type="checkbox"
+                    id="terminos"
+                    name="terminos"
+                    required />
+                <label
+                    for="terminos"
+                    style="display: inline; margin-left: 8px">
+                    Acepto los términos y condiciones *
+                </label>
+                <div
+                    class="mensaje-error"
+                    id="errorTerminos"></div>
+            </div>
+
+            <button
+            type="submit"
+            id="btnEnviar"
+            disabled>
+            Enviar Formulario
+            </button>
+       </form>
+
+
+    </div> <!--container-->
+
+
+   
+
+
+  <!--scripts-->  
+    <script src="/script/script.js" async>
+    </script>
+
+</body>
+</html>
