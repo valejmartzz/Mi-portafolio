@@ -14,6 +14,6 @@
 |----|---|---|
 | Glosario Tecnológico (Semana 1) | Glosario con términos tecnológicos organizados alfabéticamente. | [Ver proyecto](/proyectos/glosario) |
 | Fauna Sabana (Semana 2) | Página informativa sobre Fauna de la sabana. | [Ver proyecto](/proyectos/FaunaSabana) |
-| Tablas en HTML (Semana 3) | Ejercicios prácticos sobre creación de tablas. | [Ver proyecto](/proyectos/tablas) |
+| Tablas en HTML (Semana 3) | Ejercicios prácticos sobre creación de tablas. | [Ver proyecto](/proyectos/Tablas) |
 | Formulario Avanzado (Semana 4) | Formulario con validación y diseño responsive. | [Ver proyecto](/proyectos/formulario) |
 | Portafolio (Semana 5) | Mi portafolio de presentación profesional. | [Ver proyecto](/proyectos/portafolio) |
