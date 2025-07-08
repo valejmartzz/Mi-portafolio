@@ -11,7 +11,7 @@
 ## Trabajos Disponibles
 
 | Proyecto    | Descripción    | Enlace    |
-|---|---|---|
+|----|---|---|
 | Glosario Tecnológico (Semana 1) | Glosario con términos tecnológicos organizados alfabéticamente. | [Ver proyecto](/proyectos/glosario) |
 | Fauna Bogota (Semana 2) | Página informativa sobre ciberseguridad. | [Ver proyecto](/proyectos/FaunaBogota) |
 | Tablas en HTML (Semana 3) | Ejercicios prácticos sobre creación de tablas. | [Ver proyecto](/proyectos/tablas) |
